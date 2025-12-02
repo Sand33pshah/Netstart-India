@@ -1,11 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netstart India - Home</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
+
 <body>
-  
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo" onclick="location.href='index.html'">
+        <div class="logo-box">NS</div>
+        <span>Netstart India</span>
+      </div>
+
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active" data-page="home">Home</a>
+        <a href="about.html" class="nav-link" data-page="about">About</a>
+        <a href="contact.html" class="nav-link" data-page="contact">Contact</a>
+        <a class="btn-primary" href="contact.html">Get Started</a>
+      </div>
+
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-link active" data-page="home">Home</a>
+      <a href="about.html" class="mobile-link" data-page="about">About</a>
+      <a href="contact.html" class="mobile-link" data-page="contact">Contact</a>
+      <div style="padding: 0 1rem;">
+        <a class="btn-primary" style="width: 100%; margin-top: 1rem; display:inline-block; text-align:center;"
+          href="contact.html">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Page -->
+  <main id="homePage">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Your IT Partner for Digital Growth</h1>
+          <p>Netstart India helps small businesses establish and expand their online presence with affordable,
+            high-quality IT solutions.</p>
+          <div class="hero-buttons">
+            <a class="btn-white" href="contact.html">
+              Get Started Today
+              <span>→</span>
+            </a>
+            <a class="btn-secondary" href="about.html">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Our Services</h2>
+          <p>We provide comprehensive IT solutions to help your business thrive in the digital world</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">💻</div>
+            <h3>Web Development</h3>
+            <p>Custom websites and web applications built with modern technologies to help your business stand out
+              online.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">📈</div>
+            <h3>Digital Marketing</h3>
+            <p>SEO optimization and digital marketing strategies to increase your online visibility and reach.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">⚡</div>
+            <h3>IT Consulting</h3>
+            <p>Expert guidance on technology solutions tailored to your business needs and budget.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-section">
+      <div class="container">
+        <div class="two-column">
+          <div>
+            <h2>Why Choose Netstart India?</h2>
+            <p>As a dedicated IT partner, we understand the unique challenges small businesses face. Our mission is to
+              provide enterprise-level technology solutions at prices that make sense for growing businesses.</p>
+
+            <div class="benefits-list">
+              <div class="benefit-item">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>Affordable pricing for small businesses</span>
+              </div>
+              <div class="benefit-item">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>Quick turnaround time</span>
+              </div>
+              <div class="benefit-item">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>Dedicated support team</span>
+              </div>
+              <div class="benefit-item">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+                <span>Scalable solutions that grow with you</span>
+              </div>
+            </div>
+
+            <a class="btn-primary" href="contact.html">Start Your Project</a>
+          </div>
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1489438497675-d1a8d6e0632e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXZlbG9wbWVudCUyMGNvZGluZ3xlbnwxfHx8fDE3NjQ2MTIzMTF8MA&ixlib=rb-4.1.0&q=80&w=1080"
+              alt="Web development" class="feature-image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Ready to Grow Your Online Presence?</h2>
+        <p>Let's discuss how we can help your business succeed in the digital world</p>
+        <a class="btn-white" href="contact.html">
+          Contact Us Today
+          <span>→</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/main.js"></script>
 </body>
+
 </html>

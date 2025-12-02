@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netstart India - Contact</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <div class="logo" onclick="location.href='index.html'">
+        <div class="logo-box">NS</div>
+        <span>Netstart India</span>
+      </div>
+
+      <div class="nav-links">
+        <a href="index.html" class="nav-link" data-page="home">Home</a>
+        <a href="about.html" class="nav-link" data-page="about">About</a>
+        <a href="contact.html" class="nav-link active" data-page="contact">Contact</a>
+        <a class="btn-primary" href="contact.html">Get Started</a>
+      </div>
+
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-link" data-page="home">Home</a>
+      <a href="about.html" class="mobile-link" data-page="about">About</a>
+      <a href="contact.html" class="mobile-link active" data-page="contact">Contact</a>
+      <div style="padding: 0 1rem;">
+        <a class="btn-primary" style="width: 100%; margin-top: 1rem; display:inline-block; text-align:center;"
+          href="contact.html">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="contactPage">
+    <!-- Hero Section -->
+    <section class="contact-hero">
+      <div class="container">
+        <h1>Get In Touch</h1>
+        <p>Ready to take your business online? Let's discuss how we can help you achieve your digital goals.</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Contact Information -->
+          <div>
+            <h2>Contact Information</h2>
+            <p>Have questions? We're here to help. Reach out to us through any of these channels.</p>
+
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon">📧</div>
+                <div>
+                  <h3>Email</h3>
+                  <a href="mailto:shahsandeep980@gmail.com"
+                    style="color: #475569; text-decoration: none;">shahsandeep980@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">📞</div>
+                <div>
+                  <h3>Phone</h3>
+                  <a href="tel:+919056616880" style="color: #475569; text-decoration: none;">+91 9056616880</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div>
+                  <h3>Location</h3>
+                  <p style="color: #475569; margin: 0;">Mohali, Punjab, India</p>
+                </div>
+              </div>
+            </div>
+
+            <img src="assets/images/contact_img1.png" alt="Digital business growth" class="feature-image"
+              style="margin-top: 2rem;">
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form">
+            <h2>Send Us a Message</h2>
+
+            <div id="contactFormContainer">
+              <form id="contactForm">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required placeholder="John Doe">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required placeholder="john@example.com">
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210">
+                  </div>
+                  <div class="form-group">
+                    <label for="business">Business Name</label>
+                    <input type="text" id="business" name="business" placeholder="Your Company">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="service">Service Interested In *</label>
+                  <select id="service" name="service" required>
+                    <option value="">Select a service</option>
+                    <option value="web">Web Development</option>
+                    <option value="seo">SEO & Digital Marketing</option>
+                    <option value="consulting">IT Consulting</option>
+                    <option value="maintenance">Domain Buying & Custom Email Generation</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message *</label>
+                  <textarea id="message" name="message" required rows="6"
+                    placeholder="Tell us about your project..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary" style="width: 100%; padding: 1rem; font-size: 1rem;">
+                  Send Message
+                </button>
+              </form>
+            </div>
+
+            <div id="successMessage" class="success-message hidden">
+              <div class="success-icon">✓</div>
+              <h3>Thank You!</h3>
+              <p>Your message has been received. We'll get back to you within 24 hours.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional CTA -->
+    <section class="services-section">
+      <div class="container" style="text-align: center; max-width: 48rem;">
+        <h2>Let's Build Something Great Together</h2>
+        <p>Whether you're just starting out or looking to upgrade your existing digital presence, we're here to help.
+          Our team is ready to turn your vision into reality.</p>
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+          <a href="mailto:contact@netstartindia.com" class="btn-primary">Email Us</a>
+          <a href="tel:+919876543210" class="btn-primary" style="background: #475569;">Call Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
